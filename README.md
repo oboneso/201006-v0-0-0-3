@@ -1,26 +1,39 @@
 
-201006 v0-0-0-2 changelog
+201006 v0-0-0-3 changelog
 
-- deleted:
-	- logo.svg
-	- PUBLIC/favicon.ico <!-- react logo -->
-	- PUBLIC/logo192.png <!-- react logo -->
-	- PUBLIC/logo512.png <!-- react logo -->
-	- SRC/App.js
-	- SRC/App.test.js
-	- SRC/setupTests.js
-- updated:
-	- manifest.json 
-		-removed references to deleted files
-	- .gitignore 
-		- changed /node-modules to node-modules
-		- added node-modules/
-		- added .env
-- moved:
-	- README.md from ../FRONTEND to .ROOT/
-	- .gitignore from ../FRONTEND to .ROOT/
-- added:
-	- .git to .ROOT/
+	tl;dr 
+		New Components: Header & Footer
+		Added: Bootstrap
+		Added: Font Awesome
+		Added: Navbar
+
+	Detailed:
+		- deleted:
+		- updated:
+			- App.js
+				- import Header, Footer and added to the view
+				- import Container from react-bootstrap <!-- implemented styles -->
+			- Index.js
+				- import bootstrap.min.css
+			- ./SRC/COMPONENTS/Footer.js
+				- import Container, Row, Col from react-bootstrap <!-- implemented styles -->
+				- new Container, Row, Col, text
+			- ./SRC/index.css main {height: 80vh}
+			- .SRC/COMPONENTS/Header.js
+				- import Navbar, Nav, Container from react-bootstrap
+				- new navbar, links to cart & login
+		- moved:
+		- added:
+			- CDN fontawesome to index.html
+			- folder:
+				- ./SRC/COMPONENTS
+			- file:
+				- .SRC/COMPONENTS/Header.js <!-- new component -->
+				- .SRC/COMPONENTS/FOOTER.js <!-- new component -->
+				- .SRC/bootstrap.min.css <!-- new css stylesheet -->
+			- dependancy:
+				- ./FRONTEND npm react-bootstrap
+		
 
 git commit compelete
 
