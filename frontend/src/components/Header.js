@@ -15,7 +15,7 @@ const Header = () => {
                 Cart
               </Nav.Link>
               <Nav.Link href='/login'>
-                <i className='fas fa-user' />
+                <i className='fas fa-user ' />
                 Login
               </Nav.Link>
             </Nav>
